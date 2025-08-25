@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BetLog</title>
+  <link rel="icon" href="rayo.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>BetLog</h1>
+
+  <form id="betForm">
+    <h2>REGISTRAR APUESTA</h2>
+    <div class="team-inputs">
+      <input type="text" name="team1" placeholder="Equipo 1" required />
+      <input type="text" name="team2" placeholder="Equipo 2" required />
+    </div>
+    <input type="number" name="odds" placeholder="Cuota" step="0.01" required />
+    <input type="number" name="deposit" placeholder="Monto apostado" step="0.01" required />
+
+    <select name="result" required>
+      <option value="">Resultado</option>
+      <option value="win">✅ Apuesta ganada</option>
+      <option value="loss">❌ Apuesta perdida</option>
+    </select>
+
+    <select name="type" required>
+      <option value="">Tipo</option>
+      <option value="real">🔵 Real</option>
+      <option value="simulated">🟠 Simulada</option>
+    </select>
+
+    <textarea name="note" placeholder="Nota del partido (opcional)"></textarea>
+    <button type="submit">Guardar Apuesta</button>
+  </form>
+
+  <!-- ✅ Botón para abrir stats justo debajo del formulario -->
+
+  
+
+  <input type="text" id="searchBar" placeholder="Buscar por equipo o cuota..." />
+  <select id="typeFilter">
+    <option value="">🔎 Todas</option>
+    <option value="real">🔵 Solo reales</option>
+    <option value="simulated">🟠 Solo simuladas</option>
+  </select>
+  <select id="sortFilter">
+    <option value="newest">🕒 Más reciente</option>
+    <option value="oldest">📜 Más antiguo</option>
+  </select>
+
+  <section id="dashboard">
+    <div id="betHistory" class="horizontal-scroll"></div>
+  </section>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

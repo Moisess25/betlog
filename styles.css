@@ -1,0 +1,146 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+input, label, select, textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  border-radius: 4px;
+  background: #1e1e1e;
+  color: white;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.team-inputs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.team-inputs input {
+  flex: 1 1 45%;
+}
+
+button {
+  padding: 10px 20px;
+  background: #0fba09;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#searchBar, #sortFilter, #typeFilter {
+  max-width: 400px;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+
+#dashboard {
+  margin-top: 30px;
+}
+
+#betHistory {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.bet-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 16px;
+  border-radius: 8px;
+  min-width: 300px;
+  max-width: 370px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  background: #1e1e1e;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+  scroll-snap-align: start;
+}
+
+.note-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.note-edit input,
+.note-edit select,
+.note-edit textarea {
+  background: #1e1e1e;
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 6px;
+  font-size: 14px;
+}
+
+.note-edit textarea {
+  resize: vertical;
+  min-height: 60px;
+  overflow-y: auto;
+}
+
+.note-edit button {
+  align-self: flex-end;
+  border: 1px solid white;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.delete-btn {
+  background: #d72f1c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 10px;
+}
